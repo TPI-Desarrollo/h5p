@@ -6,10 +6,18 @@
       top: 0%;
       width: 100%;
    }
+
+   #bg {
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      width: 50%;
+      visibility: hidden;
+   }
 </style>
 
 <div id='container'></div>
-<img src="./teamRoles/borrar.png" />
+<img id='bg' src="./teamRoles/borrar.png" />
 <script type="text/javascript" src="assets/main.bundle.js"></script>
 
 <script>
@@ -19,7 +27,7 @@
       frameJs: '/assets/frame.bundle.js',
       frameCss: '/assets/styles/h5p.css',
    }
-   // new H5PStandalone.H5P(el, options);
+   new H5PStandalone.H5P(el, options);
 </script>
 
 </html>
